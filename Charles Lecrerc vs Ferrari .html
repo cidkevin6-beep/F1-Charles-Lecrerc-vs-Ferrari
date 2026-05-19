@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Leclerc vs Ferrari | F1 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), 
+                             url('https://images.unsplash.com/photo-1616940949805-2a5c7f5c2d5f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .ferrari-red { color: #e10600; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-black border-b border-red-600 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-flag-checkered text-3xl ferrari-red"></i>
+                <span class="text-2xl font-bold">F1 LEGACY</span>
+            </div>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-red-500 transition-colors">INICIO</a>
+                <a href="#biografia" class="hover:text-red-500 transition-colors">LECLERC</a>
+                <a href="#dramas" class="hover:text-red-500 transition-colors">EL DRAMA</a>
+                <a href="#stats" class="hover:text-red-500 transition-colors">ESTADÍSTICAS</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-screen flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-black/70 px-5 py-2 rounded-full mb-6 border border-red-600">
+                    <span class="text-red-500 font-bold">CHARLES LECLERC</span>
+                    <span class="text-white/70">VS</span>
+                    <span class="text-red-500 font-bold">FERRARI</span>
+                </div>
+                
+                <h1 class="text-7xl font-bold leading-none mb-6">
+                    EL TALENTO QUE <span class="ferrari-red">MERECÍA</span><br>MÁS QUE NADIE
+                </h1>
+                
+                <p class="text-xl text-zinc-300 mb-10">
+                    El prodigio monegasco y la Scuderia. Una historia de poles, victorias y oportunidades perdidas.
+                </p>
+                
+                <button onclick="document.getElementById('dramas').scrollIntoView({behavior: 'smooth'})" 
+                        class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-xl font-bold flex items-center gap-3 text-lg">
+                    <i class="fa-solid fa-fire"></i>
+                    VER EL DRAMA
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BIOGRAFÍA -->
+    <section id="biografia" class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-8 text-center">Charles Leclerc</h2>
+            <p class="text-center text-xl text-zinc-300 max-w-3xl mx-auto">
+                Nacido en Mónaco en 1997, Leclerc llegó a Ferrari como el gran heredero. Rápido, talentoso y con una habilidad excepcional en clasificación.
+            </p>
+        </div>
+    </section>
+
+    <!-- EL DRAMA -->
+    <section id="dramas" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-12">El Drama: Leclerc vs Ferrari</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-3">Estrategia</h3>
+                    <p class="text-zinc-400">Decisiones cuestionables del pitwall que le han costado victorias.</p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-3">Fiabilidad</h3>
+                    <p class="text-zinc-400">Múltiples abandonos cuando lideraba carreras.</p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-3">2022</h3>
+                    <p class="text-zinc-400">El año que pudo ser campeón y se escapó.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section id="stats" class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-12">Estadísticas con Ferrari</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-black p-8 rounded-3xl">
+                    <div class="text-6xl font-bold text-red-500">23</div>
+                    <p class="text-zinc-400 mt-2">Pole Positions</p>
+                </div>
+                <div class="bg-black p-8 rounded-3xl">
+                    <div class="text-6xl font-bold text-red-500">6</div>
+                    <p class="text-zinc-400 mt-2">Victorias</p>
+                </div>
+                <div class="bg-black p-8 rounded-3xl">
+                    <div class="text-6xl font-bold text-red-500">28+</div>
+                    <p class="text-zinc-400 mt-2">Podios</p>
+                </div>
+                <div class="bg-black p-8 rounded-3xl">
+                    <div class="text-6xl font-bold text-amber-400">0</div>
+                    <p class="text-zinc-400 mt-2">Títulos Mundiales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 text-center">
+        <p class="text-zinc-500">Forza Charles • #CharlesLeclerc • F1 2026</p>
+    </footer>
+
+</body>
+</html>
